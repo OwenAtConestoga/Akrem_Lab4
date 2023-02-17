@@ -127,7 +127,25 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BMW.cpp" />
+    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="Drawable.cpp" />
+    <ClCompile Include="functionFile.cpp" />
+    <ClCompile Include="Mazda.cpp" />
+    <ClCompile Include="Rectangle.cpp" />
+    <ClCompile Include="Shape.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Vehicle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BMW.h" />
+    <ClInclude Include="Circle.h" />
+    <ClInclude Include="Drawable.h" />
+    <ClInclude Include="functionFile.h" />
+    <ClInclude Include="Mazda.h" />
+    <ClInclude Include="Rectangle.h" />
+    <ClInclude Include="Shape.h" />
+    <ClInclude Include="Vehicle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
