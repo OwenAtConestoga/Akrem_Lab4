@@ -38,31 +38,27 @@ int main()
 
 	Circle circle1(6);
 	object1 = &circle1;
-	//object1->Drive();
 	Draw(*object1);
-
-	cout << circle1.area() << endl;
+	cout << "\nArea of circle with radius 6 is = " << circle1.area() << endl;
 
 	Rectangle rectangle1(12,6); 
 	object1 = &rectangle1; 
-	//object1->Drive(); 
 	Draw(*object1);
-
-	cout << rectangle1.area() << endl;
-
-	cout << endl;
+	cout << "Area of rectangle with 12 length and width 6 = " << rectangle1.area() << endl;
 
 	Circle circle2(6);
-	Circle circle3(6);
+	Circle circle3(10);
 	Rectangle rectangle2(12,6);
-	Rectangle rectangle3(12,6);
+	Rectangle rectangle3(10,8);
 
 
 	Shape* shapeArray[SHAPENUM] = {&circle2, &circle3, &rectangle2, &rectangle3};
 
-	double totalArea = getTotalArea(shapeArray[4], SHAPENUM);
+	double totalArea;
 
-	cout << totalArea << endl;
+	totalArea = getTotalArea(shapeArray);
+
+	cout << "\nTotal area of the 4 shapes passed in is = " << totalArea << endl;
 
 	return 0;
 }

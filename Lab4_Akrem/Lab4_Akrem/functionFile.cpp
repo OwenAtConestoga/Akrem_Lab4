@@ -11,7 +11,7 @@
 #include "Rectangle.h"
 #include <iostream>
 
-
+#define SHAPENUM 4
 
 using namespace std;
 
@@ -111,16 +111,24 @@ void Draw(Drawable& object)
 }
 
 
-double getTotalArea(Shape* shapeArray, int arraySize) {
+double getTotalArea(Shape* shapeArray[]) {
 
+	int arraySize = SHAPENUM; 
+	 
 	if (shapeArray == nullptr) {
 		std::cerr << "Error: shapeArray is null\n";
 		return 0.0;
 	}
 
 	double totalArea = 0.0;
-	for (int i = 0; i < arraySize; i++) {
-		totalArea += shapeArray[i].area();
+
+	
+
+	for (int i = 0; i < arraySize; i++) 
+	{
+
+			totalArea += shapeArray[i]->area();
+
 	}
 
 	return totalArea;

@@ -18,3 +18,4 @@ string Shape::getIdentifier()
 {
     return this->type;
 }
+

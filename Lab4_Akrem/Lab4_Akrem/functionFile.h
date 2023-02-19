@@ -12,5 +12,5 @@
 void Draw(Drawable& object);
 
 
-double getTotalArea(Shape*, int);
+double getTotalArea(Shape* []);
 	
