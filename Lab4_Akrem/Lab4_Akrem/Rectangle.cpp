@@ -20,3 +20,11 @@ string Rectangle::getIdentifier() {
 void Rectangle::Drive() {
      cout << "\nThis is a rectangle, cannot be driven" << endl;
 }
+
+
+Rectangle::Rectangle(double width, double length) : width(width), length(length) {}
+
+double Rectangle::area() {
+
+    return width * length;
+}

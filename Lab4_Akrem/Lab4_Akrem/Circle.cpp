@@ -11,6 +11,7 @@ Circle::Circle()
 {
     // Constructor that sets type to circle
     this->type = "Circle";
+    radius = 0.0;
 }
 
 std::string Circle::getIdentifier()
@@ -22,4 +23,12 @@ std::string Circle::getIdentifier()
 void Circle::Drive()
 {
     cout << "\nThis is a circle, cannot be driven" << std::endl;
+}
+
+
+Circle::Circle(double radius) : radius(radius) {}
+
+double Circle::area()  {
+
+    return 3.14 * radius * radius;
 }

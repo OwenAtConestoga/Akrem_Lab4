@@ -6,7 +6,12 @@
 
 #include "functionFile.h"
 #include "Drawable.h"
+#include "Shape.h"
+#include "Circle.h"
+#include "Rectangle.h"
 #include <iostream>
+
+
 
 using namespace std;
 
@@ -68,8 +73,8 @@ void Draw(Drawable& object)
 	else if (int result = identifier.compare(circle) == 0)
 	{
 		cout << "\n";
-		int radius = 6;  // adjust the radius to change the size of the circle
-		for (int y = -radius; y <= radius; y++) {
+		int radius = 5;  // adjust the radius to change the size of the circle
+		for (int y = -radius; y <= radius ; y++) {
 			for (int x = -radius; x <= radius; x++) {
 				if (sqrt(x * x + y * y) <= radius) {
 					cout << "* ";
@@ -100,4 +105,23 @@ void Draw(Drawable& object)
 			cout << endl;
 		}
 	}
+
+
+
+}
+
+
+double getTotalArea(Shape* shapeArray, int arraySize) {
+
+	if (shapeArray == nullptr) {
+		std::cerr << "Error: shapeArray is null\n";
+		return 0.0;
+	}
+
+	double totalArea = 0.0;
+	for (int i = 0; i < arraySize; i++) {
+		totalArea += shapeArray[i].area();
+	}
+
+	return totalArea;
 }

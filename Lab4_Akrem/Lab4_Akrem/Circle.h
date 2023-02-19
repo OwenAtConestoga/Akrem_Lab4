@@ -12,6 +12,9 @@
 
 class Circle : public Shape
 {
+
+    double radius;
+
 public:
     // Constructor that assigns the type circle 
     Circle();
@@ -21,6 +24,9 @@ public:
 
     // Prints an error message if you try to drive a circle
     void Drive() override;
+
+    Circle(double radius);
+    double area() override;
 };
 
 #endif

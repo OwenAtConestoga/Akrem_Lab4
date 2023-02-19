@@ -10,11 +10,17 @@
 #include "Shape.h"
 
 class Rectangle : public Shape {
+
+    double width;
+    double length;
 public:
     Rectangle();
     // Used to get the type of object
     string getIdentifier() override;
     void Drive() override;
+    Rectangle(double width, double length);
+    double area() override;
+    
 };
 
 #endif 

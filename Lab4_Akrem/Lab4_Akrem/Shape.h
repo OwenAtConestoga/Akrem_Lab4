@@ -19,6 +19,9 @@ protected:
 
 public:
     void Drive() override;
+
+    virtual double area() = 0 ;
+
     // getIdentifier function returns the type of the shape object
     string getIdentifier() override;
 };

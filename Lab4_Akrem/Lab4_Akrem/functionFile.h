@@ -5,6 +5,12 @@
 // Function Header File
 #pragma once
 #include "Drawable.h"
+#include "Shape.h"
+
+
 
 void Draw(Drawable& object);
+
+
+double getTotalArea(Shape*, int);
 	
