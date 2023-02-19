@@ -18,9 +18,6 @@
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Drawable.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Vehicle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -39,7 +36,7 @@
     <ClCompile Include="Rectangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="functionFile.cpp">
+    <ClCompile Include="getTotalArea.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,7 +62,7 @@
     <ClInclude Include="Rectangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="functionFile.h">
+    <ClInclude Include="getTotalArea.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

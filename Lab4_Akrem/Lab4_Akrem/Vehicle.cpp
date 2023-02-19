@@ -10,6 +10,7 @@
 #include <iostream>
 using namespace std;
 
+// Prints the vehicle status
 void Vehicle::Drive()
 {
     cout << "Vehicle is being driven" << endl;

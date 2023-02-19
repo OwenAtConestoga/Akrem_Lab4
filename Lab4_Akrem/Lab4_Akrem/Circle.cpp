@@ -22,12 +22,13 @@ std::string Circle::getIdentifier()
 
 void Circle::Drive()
 {
+    // Prints circle drive status
     cout << "\nThis is a circle, cannot be driven" << std::endl;
 }
 
 
 Circle::Circle(double radius) : radius(radius) {}
-
+// Funciton to calculate the area of the circle
 double Circle::area()  {
 
     return 3.14 * radius * radius;

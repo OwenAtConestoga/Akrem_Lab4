@@ -22,9 +22,8 @@ void Rectangle::Drive() {
      cout << "\nThis is a rectangle, cannot be driven" << endl;
 }
 
-
 Rectangle::Rectangle(double width, double length) : width(width), length(length) {}
-
+// Function to calculate the area of the rectangle
 double Rectangle::area() {
 
     return width * length;

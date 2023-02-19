@@ -7,6 +7,7 @@
 #include "Shape.h"
 #include <iostream>
 
+// Function that prints the drive status
 void Shape::Drive()
 {
     cout << "\nThis is a shape, cannot be driven" << std::endl;

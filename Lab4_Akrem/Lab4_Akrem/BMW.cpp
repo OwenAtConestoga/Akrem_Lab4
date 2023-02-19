@@ -12,7 +12,7 @@ BMW::BMW()
     // Constructor that sets the brand to BMW
     this->brand = "BMW";
 }
-
+// Prints the vehicle status
 void BMW::Drive()
 {
     cout << "BMW is being driven vroooooooooom" << endl;

@@ -24,6 +24,7 @@ public:
 
     // getIdentifier function returns the type of the shape object
     string getIdentifier() override;
+
 };
 
 #endif
