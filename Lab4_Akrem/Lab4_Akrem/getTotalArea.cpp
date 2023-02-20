@@ -27,7 +27,7 @@ double getTotalArea(Shape* shapeArray[]) {
 
 	// Check if the array is null, and print an error message if so
 	if (shapeArray == nullptr) {
-		std::cerr << "Error: shapeArray is null\n";
+		cout << "Error: shapeArray is null\n";
 		return 0.0;
 	}
 
