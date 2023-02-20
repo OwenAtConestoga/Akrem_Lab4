@@ -142,16 +142,16 @@ int main()
 	Draw(*object1);
 
 	// Create a Circle object with radius 6 and assign its address to the pointer
-	Circle circle1(6);
-	object1 = &circle1;
+	Circle circle4, circle1(6);
+	object1 = &circle4;
 	// Draw the Circle object through the pointer
 	Draw(*object1);
 	// Print the area of the Circle object
 	cout << "\nArea of circle with radius 6 is = " << circle1.area() << endl;
 
 	// Create a Rectangle object with length 12 and width 6 and assign its address to the pointer
-	Rectangle rectangle1(12, 6);
-	object1 = &rectangle1;
+	Rectangle rectangle4, rectangle1(12, 6);
+	object1 = &rectangle4;
 	// Draw the Rectangle object through the pointer
 	Draw(*object1);
 	// Print the area of the Rectangle object
